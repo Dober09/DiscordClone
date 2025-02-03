@@ -10,7 +10,9 @@
                 <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
                 
                 
-            </ResourceDictionary.MergedDictionaries>
+            </ResourceDictionary.MergedDictionaries>              
+            
+            
              <!--Fonts-->
             <Style  x:Key="titleText" TargetType="Label">
                 <Setter Property="TextColor"  Value="Snow" />

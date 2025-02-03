@@ -4,15 +4,20 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:view ="clr-namespace:DiscordClone.Views"
-  
-    Title="DiscordClone">
+    Title="DiscordClone">                                                            
 
-
+    <Shell.Resources>
+        <Style TargetType="Tab">
+            <Setter Property="Shell.TabBarBackgroundColor" Value="#23272A"/>
+        </Style>
+    </Shell.Resources>
+    
     <TabBar>
-        <Tab Title="Home">
+        <Tab Title="Home" 
+             Icon="homa.png">
             <ShellContent  ContentTemplate="{DataTemplate view:MainPage}"/>
         </Tab>
-        <Tab Title="Notification">
+        <Tab Title="Notification" Icon="notification.png">
             <ShellContent ContentTemplate="{DataTemplate view:NotificationPage}" />
         </Tab>
         <Tab Title="You">
