@@ -1,0 +1,34 @@
+﻿<?xml version = "1.0" encoding = "UTF-8" ?>
+<Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DiscordClone"
+             x:Class="DiscordClone.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
+                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
+                
+                
+            </ResourceDictionary.MergedDictionaries>
+             <!--Fonts-->
+            <Style  x:Key="titleText" TargetType="Label">
+                <Setter Property="TextColor"  Value="Snow" />
+                <Setter Property="FontFamily"  Value="PoppinSemibold"/>
+                <Setter Property="FontAttributes"  Value="Bold" />
+            </Style>
+            
+            <Style  x:Key="lightText" TargetType="Label">
+                <Setter Property="TextColor"  Value="Snow" />
+                <Setter Property="FontFamily"  Value="Poppinlight"/>
+                <Setter Property="FontAttributes"  Value="Bold" />
+            </Style>
+            
+            <Style  x:Key="RegularText" TargetType="Label">
+                <Setter Property="TextColor"  Value="#959595" />
+                <Setter Property="FontFamily"  Value="PoppinRegular"/>
+                <Setter Property="FontSize"  Value="13" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
