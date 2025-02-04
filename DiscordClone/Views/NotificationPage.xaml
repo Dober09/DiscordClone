@@ -19,12 +19,10 @@
                 <!--Border.GestureRecognizers>
                     <TapGestureRecognizer Command="" />
                 </Border.GestureRecognizers -->
-                
-                <Label Text="..."
-                       FontSize="30"       
-                       Style="{StaticResource titleText}"
-                       
-                       HorizontalOptions="Center"/>
+
+                <Image Source="dots.png" 
+                       Aspect="AspectFill"
+                       WidthRequest="40"/>
             </Border>
         </FlexLayout>
         <BoxView Grid.Row="1"

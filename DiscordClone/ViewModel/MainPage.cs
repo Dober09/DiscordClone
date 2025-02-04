@@ -8,16 +8,30 @@ namespace DiscordClone.ViewModel
     {
        
 
-        public ObservableCollection<Model> Models { get; set; }
+        public ObservableCollection<Group> Groups { get; set; }
 
         public MainPage() { 
         
-            Models = new ObservableCollection<Model>() { 
-                new Model
+            Groups = new ObservableCollection<Group>() { 
+                new Group
                 {
-                    Title = "General",
-                    Icon = "🔨",
-                    subTitle = "Forge",
+                    id=1,
+                    image="mettlestate.png"
+                }, new Group
+                {
+                    id=2,
+                    image="blender.png"
+                }, new Group
+                {
+                    id=3,
+                    image="chess.webp"
+                }, new Group
+                {
+                    id=4,
+                    image="bitbucket.png"
+                },new Group  {
+                    id=5,
+                    image="plus.png"
                 },
 
             
@@ -27,13 +41,13 @@ namespace DiscordClone.ViewModel
         
     }
 
-    public class Model
+    public class Group
     {
       
-        public string Title { get; set; }
+        public int id{ get; set; }
 
-        public string Icon { get; set; }
+        public string image { get; set; }
 
-        public string subTitle { get; set; }
+       
     }
 }

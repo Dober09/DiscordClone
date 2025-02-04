@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiscordClone.Views.MainPage"
+             xmlns:vm ="clr-namespace:DiscordClone.ViewModel"
+            
              BackgroundColor="#1C2023"
              >
     <Grid  ColumnDefinitions=".2*,.7*">
@@ -26,6 +28,14 @@
                      WidthRequest="50"
                     
                      BackgroundColor="Snow" />
+
+                        <ImageButton   Source="blender.png" WidthRequest="50" HeightRequest="50" CornerRadius="50"  Aspect="AspectFit" />
+            <!--CollectionView ItemsSource="{Binding Groups}">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView -->
 
         </VerticalStackLayout>
         <!--Right panal-->
@@ -111,12 +121,13 @@
                             BackgroundColor="#1C2023"   />
 
                 <ScrollView Orientation="Vertical" HeightRequest="660"  >
-                    <VerticalStackLayout Spacing="5">
+                    <VerticalStackLayout Spacing="15">
                         
                         <FlexLayout JustifyContent="SpaceBetween"
                                     Padding="15" >
                             <HorizontalStackLayout >
-                                <Label Text="Channel &amp; Roles" 
+                                <Label Text="Channel &amp; Roles"
+                                       FontSize="18"
                                        Style="{StaticResource RegularText}"/>
                             </HorizontalStackLayout>
 
@@ -132,8 +143,8 @@
                             </Border>
                         </FlexLayout>
 
-                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="10">
-                            <Label Text="&gt; General"  Style="{StaticResource RegularText}"/>
+                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="6">
+                            <Label Text="&gt; General" FontSize="18" Style="{StaticResource RegularText}"/>
                             <HorizontalStackLayout Spacing="10" >
                                 <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
                                 <Label Text="🔨  "  VerticalOptions="Center" />
@@ -146,16 +157,17 @@
                             </HorizontalStackLayout>
 
                         </VerticalStackLayout>  
-                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="20">
-                            <Label Text="&gt; Welcome + Announcements"  Style="{StaticResource RegularText}"/>
+                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="10">
+                            <Label Text="&gt; Welcome + Announcements" FontSize="18"  Style="{StaticResource RegularText}"/>
                             <HorizontalStackLayout Spacing="10" >
                                 <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
                                 <Label Text="🫣  "  VerticalOptions="Center" />
                                 <Label Text=": Welcome" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
                             </HorizontalStackLayout>
 
+                            </VerticalStackLayout>
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Discussion Zone"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Discussion Zone" FontSize="18"  Style="{StaticResource RegularText}"/>
                                 <HorizontalStackLayout Spacing="10" >
                                     <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
                                     <Label Text="🎮 "  VerticalOptions="Center" />
@@ -167,38 +179,36 @@
                                     <Label Text="🧔‍♂️ 🤝 🧔‍♂️"  VerticalOptions="Center" />
                                     <Label Text=": looking-for-group" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
                                 </HorizontalStackLayout>
-                            </VerticalStackLayout>
-
-                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
-
                                 <HorizontalStackLayout Spacing="10" >
                                     <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
                                     <Label Text="🏆"  VerticalOptions="Center" />
                                     <Label Text=": casual-cup-discussion" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
                                 </HorizontalStackLayout  >
 
+                        </VerticalStackLayout>
 
 
+
+
+
+
+                        <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Mettlestate Louge"  Style="{StaticResource RegularText}" FontSize="18"/>
                             </VerticalStackLayout>
-
-
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Mettlestate Louge"  Style="{StaticResource RegularText}"/>
-                            </VerticalStackLayout>
-                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Mettlestate Support"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Mettlestate Support"  Style="{StaticResource RegularText}" FontSize="18"/>
                             </VerticalStackLayout>
                             
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Cups and Leagues"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Cups and Leagues"  Style="{StaticResource RegularText}" FontSize="18"/>
                             </VerticalStackLayout> 
                             
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}" FontSize="18"/>
                             </VerticalStackLayout>
                             
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}" FontSize="18"/>
                                 <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" >
                                     <Label Text="🗨️" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
                                     <Label Text="👔"  VerticalOptions="Center" />
@@ -208,7 +218,7 @@
                             </VerticalStackLayout> 
                             
                             <VerticalStackLayout Padding="10 ,0, 0 ,0">
-                                <Label Text="&gt; Misc"  Style="{StaticResource RegularText}"/>
+                            <Label Text="&gt; Misc"  Style="{StaticResource RegularText}" FontSize="18"/>
                                 <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" >
 
                                     <Label Text="🔊"  VerticalOptions="Center" />
@@ -233,7 +243,7 @@
                                 </Border>
                             </VerticalStackLayout>
 
-                        </VerticalStackLayout>
+                       
                         
                         
                         

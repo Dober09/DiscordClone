@@ -20,7 +20,7 @@
         <Tab Title="Notification" Icon="notification.png">
             <ShellContent ContentTemplate="{DataTemplate view:NotificationPage}" />
         </Tab>
-        <Tab Title="You">
+        <Tab Title="You" Icon="onlineicon.png">
             <ShellContent ContentTemplate="{DataTemplate view:ProfilePage}"  />
         </Tab>
     </TabBar>

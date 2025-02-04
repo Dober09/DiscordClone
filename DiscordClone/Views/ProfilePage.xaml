@@ -13,23 +13,23 @@
                        
                         AlignContent="Start"
                         Background="#1065c0">
-                <Border  BackgroundColor="Gray"
-                     Stroke="Gray"
-                     HeightRequest="50"
-                     WidthRequest="50"
+            <Border  BackgroundColor="#272A2F"
+                     Stroke="#272A2F"
+                     HeightRequest="40"
+                     WidthRequest="40"
                      StrokeShape="RoundRectangle 50"
-                         Margin="5"
+                         Margin="2"
                      
                      >
 
-                    <Image Source="shop.png" WidthRequest="30" Aspect="AspectFit"/>
+                    <Image Source="store.png" WidthRequest="30" Aspect="AspectFit"/>
                 </Border>
 
-                <Border  BackgroundColor="Gray"
-                     Stroke="Gray"
-                     HeightRequest="50"
-                     Margin="5"
-                     WidthRequest="100"
+            <Border  BackgroundColor="#272A2F"
+                     Stroke="#272A2F"
+                     HeightRequest="40"
+                     Margin="2"
+                     WidthRequest="90"
                      StrokeShape="RoundRectangle 10">
                     <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
                         
@@ -39,21 +39,21 @@
 
                 </Border>
 
-                <Border  BackgroundColor="Gray"
-                         Stroke="Gray"
-                         HeightRequest="50"
-                         Margin="5"
-                         WidthRequest="50"
+            <Border  BackgroundColor="#272A2F"
+                         Stroke="#272A2F"
+                         HeightRequest="40"
+                         Margin="2"
+                         WidthRequest="40"
                          StrokeShape="RoundRectangle 50">
                 
                 <Image Source="settings.png" WidthRequest="30" Aspect="AspectFit"/>
             </Border>
         </FlexLayout>
 
-        <Grid RowDefinitions=".4*,.7*" Grid.Row="1"   Margin="10">
+        <Grid RowDefinitions=".3*,.9*" Grid.Row="1"   Margin="10">
             <!--Header section-->
             <VerticalStackLayout Grid.Row="0">
-                <HorizontalStackLayout >
+                <HorizontalStackLayout  Spacing="10">
                     <Border Stroke="#272A2F"
                             StrokeThickness="7"
                             StrokeShape="RoundRectangle 50"
@@ -61,20 +61,31 @@
                             HeightRequest="100"
                             Background="snow"
                             >
-                        <Image Source="gintama.webp" WidthRequest="60" Aspect="AspectFill" />
-                    </Border> 
-                    
+                        <Image Source="onlineicon.png" WidthRequest="60" Aspect="AspectFit" />
+                    </Border>
+
+                    <Border Stroke="#272A2F"
+                            BackgroundColor="#272A2F"
+                            StrokeShape="RoundRectangle 10"
+                            WidthRequest="150"
+                            HeightRequest="40">
+                        <Label Text=" + Add Status"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               FontSize="20"
+                               VerticalOptions="Center"  Style="{StaticResource RegularText}" />
+                    </Border>
                     
                     
                 </HorizontalStackLayout>
                 <HorizontalStackLayout>
 
-                    <Label Text="lebo_hang_022102" Style="{StaticResource titleText}" />
+                    <Label Text="lebo_hang_022102" Style="{StaticResource titleText}"  FontAttributes="Bold" FontSize="23"/>
                 </HorizontalStackLayout>
-                    <Label Text="lebo_hang_022102" Style="{StaticResource RegularText}" />
+                    <Label Text="lebo_hang_022102" Style="{StaticResource RegularText}" FontSize="20" />
             </VerticalStackLayout>
 
-            <VerticalStackLayout  Grid.Row="1" Spacing="20">
+            <VerticalStackLayout  Grid.Row="1" Spacing="10">
 
                 <Button Text="Edit Profile" CornerRadius="50" />
                 
@@ -87,8 +98,11 @@
                         
                         <Label Text="Member Since"  Style="{StaticResource RegularText}" FontAttributes="Bold"/>
                         <FlexLayout >
-                           
-                        <Label Text="Sep 6 2023" Style="{StaticResource lightText}" />
+                            <Image Source="discord2.png"
+                                   WidthRequest="20"
+                                   Aspect="AspectFit"/>
+
+                            <Label Text="Sep 6 2023" Style="{StaticResource lightText}"  Margin="5,0,0,0"/>
                             
                         </FlexLayout>
 
