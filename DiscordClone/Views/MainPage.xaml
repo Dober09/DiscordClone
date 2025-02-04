@@ -46,8 +46,8 @@
                                TextColor="Snow" />
 
                         <Image Source="approved.png"
-                               WidthRequest="40"
-                               HeightRequest="40"
+                               WidthRequest="30"
+                               HeightRequest="30"
                                Aspect="AspectFit"/>
 
                          <Image Source="right.png"
@@ -110,23 +110,135 @@
                 <BoxView  HeightRequest="1"
                             BackgroundColor="#1C2023"   />
 
-                <ScrollView  Orientation="Vertical">
-                    <FlexLayout JustifyContent="SpaceBetween"  >
-                        <HorizontalStackLayout >
-                            <Label Text="Channel &amp; Roles" Style="{StaticResource RegularText}"/>
-                        </HorizontalStackLayout>
+                <ScrollView Orientation="Vertical" HeightRequest="660"  >
+                    <VerticalStackLayout Spacing="5">
+                        
+                        <FlexLayout JustifyContent="SpaceBetween"
+                                    Padding="15" >
+                            <HorizontalStackLayout >
+                                <Label Text="Channel &amp; Roles" 
+                                       Style="{StaticResource RegularText}"/>
+                            </HorizontalStackLayout>
 
-                        <Border Stroke="#1C2023"
-                                BackgroundColor="#1C2023"
-                                WidthRequest="40"
-                               
-                                StrokeShape="RoundRectangle 20"    >
+                            <Border Stroke="#1C2023"
+                                    BackgroundColor="#1C2023"
+                                    WidthRequest="40"
+                                    StrokeShape="RoundRectangle 20"  >
+
+                                <Label Text="New"
+                                       Style="{StaticResource titleText}"
+                                       TextColor="Purple" 
+                                       HorizontalOptions="Center"/>
+                            </Border>
+                        </FlexLayout>
+
+                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="10">
+                            <Label Text="&gt; General"  Style="{StaticResource RegularText}"/>
+                            <HorizontalStackLayout Spacing="10" >
+                                <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                <Label Text="🔨  "  VerticalOptions="Center" />
+                                <Label Text=": Forge" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+                            <HorizontalStackLayout Spacing="10" >
+                                <Label Text="🔈" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                <Label Text="📢 "  VerticalOptions="Center" />
+                                <Label Text=": announcements" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+
+                        </VerticalStackLayout>  
+                        <VerticalStackLayout Padding="10 ,0, 0 ,0" Spacing="20">
+                            <Label Text="&gt; Welcome + Announcements"  Style="{StaticResource RegularText}"/>
+                            <HorizontalStackLayout Spacing="10" >
+                                <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                <Label Text="🫣  "  VerticalOptions="Center" />
+                                <Label Text=": Welcome" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                            </HorizontalStackLayout>
+
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Discussion Zone"  Style="{StaticResource RegularText}"/>
+                                <HorizontalStackLayout Spacing="10" >
+                                    <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                    <Label Text="🎮 "  VerticalOptions="Center" />
+                                    <Label Text=": game-discussion" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+
+                                <HorizontalStackLayout Spacing="10" >
+                                    <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                    <Label Text="🧔‍♂️ 🤝 🧔‍♂️"  VerticalOptions="Center" />
+                                    <Label Text=": looking-for-group" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+                            </VerticalStackLayout>
+
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+
+                                <HorizontalStackLayout Spacing="10" >
+                                    <Label Text="#" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                    <Label Text="🏆"  VerticalOptions="Center" />
+                                    <Label Text=": casual-cup-discussion" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                                </HorizontalStackLayout  >
 
 
-                            <Label Text="New" Style="{StaticResource titleText}"  TextColor="Purple" HorizontalOptions="Center"/>
-                        </Border>
-                    </FlexLayout>
+
+                            </VerticalStackLayout>
+
+
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Mettlestate Louge"  Style="{StaticResource RegularText}"/>
+                            </VerticalStackLayout>
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Mettlestate Support"  Style="{StaticResource RegularText}"/>
+                            </VerticalStackLayout>
+                            
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Cups and Leagues"  Style="{StaticResource RegularText}"/>
+                            </VerticalStackLayout> 
+                            
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}"/>
+                            </VerticalStackLayout>
+                            
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Team Recruitment"  Style="{StaticResource RegularText}"/>
+                                <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" >
+                                    <Label Text="🗨️" Style="{StaticResource titleText}" FontSize="22" VerticalOptions="Center"  />
+                                    <Label Text="👔"  VerticalOptions="Center" />
+                                    <Label Text=": recruitment" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+
+                            </VerticalStackLayout> 
+                            
+                            <VerticalStackLayout Padding="10 ,0, 0 ,0">
+                                <Label Text="&gt; Misc"  Style="{StaticResource RegularText}"/>
+                                <HorizontalStackLayout Spacing="10" Margin="0,10,0,0" >
+
+                                    <Label Text="🔊"  VerticalOptions="Center" />
+                                    <Label Text="AFK" Style="{StaticResource RegularText}" VerticalOptions="Center" FontSize="18" FontAttributes="Bold"/>
+                                </HorizontalStackLayout>
+                                <Border Stroke="#1C2023"
+                                        BackgroundColor="#1C2023"
+                                        StrokeShape="RoundRectangle 40"
+                                        WidthRequest="230"
+                                        HeightRequest="40"
+                                        Margin="0,10,0,0"
+                        
+                                        >
+                                    <FlexLayout JustifyContent="Center" AlignContent="Center">
+                                        <Label Text="🔊"  HorizontalOptions="Center" VerticalOptions="Center" />
+                                        <Label Text="Show All"
+                                               Margin="10,0"
+                                               Style="{StaticResource RegularText}"
+                                               HorizontalOptions="Center"
+                                               VerticalOptions="Center" />
+                                    </FlexLayout>
+                                </Border>
+                            </VerticalStackLayout>
+
+                        </VerticalStackLayout>
+                        
+                        
+                        
                     
+                    </VerticalStackLayout>
                     
                 </ScrollView>
 
