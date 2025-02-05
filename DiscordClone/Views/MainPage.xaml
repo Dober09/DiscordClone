@@ -2,8 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DiscordClone.Views.MainPage"
-             xmlns:vm ="clr-namespace:DiscordClone.ViewModel"
-            
              BackgroundColor="#1C2023"
              >
     <Grid  ColumnDefinitions=".2*,.7*">
@@ -28,14 +26,16 @@
                      WidthRequest="50"
                     
                      BackgroundColor="Snow" />
+                        <ImageButton   Source="mettlestate.png" WidthRequest="80" HeightRequest="90" CornerRadius="50"   Aspect="AspectFit" />
+            <VerticalStackLayout Spacing="15">
+                
 
-                        <ImageButton   Source="blender.png" WidthRequest="50" HeightRequest="50" CornerRadius="50"  Aspect="AspectFit" />
-            <!--CollectionView ItemsSource="{Binding Groups}">
-                <CollectionView.ItemTemplate>
-                    <DataTemplate>
-                    </DataTemplate>
-                </CollectionView.ItemTemplate>
-            </CollectionView -->
+                        <ImageButton   Source="learnmore.png" WidthRequest="60" HeightRequest="60" CornerRadius="50"   Aspect="AspectFit" />
+                        <ImageButton   Source="chess.webp" WidthRequest="60" HeightRequest="60" CornerRadius="50"   Aspect="AspectFit" />
+                        <ImageButton   Source="logo.png" WidthRequest="60" HeightRequest="60" CornerRadius="50"   Aspect="AspectFit" />
+                <ImageButton   Source="plus.png" WidthRequest="50" HeightRequest="50" Padding="10" CornerRadius="50"  Background="#272A2F"  Aspect="AspectFit" />
+            </VerticalStackLayout>
+            
 
         </VerticalStackLayout>
         <!--Right panal-->
@@ -120,6 +120,7 @@
                 <BoxView  HeightRequest="1"
                             BackgroundColor="#1C2023"   />
 
+                <!--- The scroll view panel-->
                 <ScrollView Orientation="Vertical" HeightRequest="660"  >
                     <VerticalStackLayout Spacing="15">
                         

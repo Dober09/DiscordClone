@@ -29,11 +29,11 @@
                      Stroke="#272A2F"
                      HeightRequest="40"
                      Margin="2"
-                     WidthRequest="90"
+                     WidthRequest="90"                                  
                      StrokeShape="RoundRectangle 10">
                     <HorizontalStackLayout VerticalOptions="Center" HorizontalOptions="Center" Spacing="20">
                         
-                        <Image Source="shop.png" WidthRequest="20" Aspect="AspectFit"/>
+                        <Image Source="nitro.png" WidthRequest="25" Aspect="AspectFit"/>
                         <Label Text="Nitro" Style="{StaticResource titleText}" TextColor="Snow" />
                     </HorizontalStackLayout>
 
